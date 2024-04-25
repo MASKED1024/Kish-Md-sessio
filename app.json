@@ -1,9 +1,9 @@
 {
-    "name": "LEGACY-MD Pairing",
-    "description": "LEGACY-MD WA bot, Created by Brasho Kish",
+    "name": "KISH-MD Pairing",
+    "description": "KISH-MD WA bot, Created by Brasho Kish",
     "logo": "https://telegra.ph/file/61cc2fe7866ef604d4506.jpg",
     "repository": "https://github.com/Brashokish/Legacy-Md-Session",
-    "keywords": ["LegacyMd"],
+    "keywords": ["KishMd"],
     "success_url": "/", 
     "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
     "env": {      
