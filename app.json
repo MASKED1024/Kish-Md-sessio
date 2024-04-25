@@ -2,7 +2,7 @@
     "name": "KISH-MD Pairing",
     "description": "KISH-MD WA bot, Created by Brasho Kish",
     "logo": "https://telegra.ph/file/61cc2fe7866ef604d4506.jpg",
-    "repository": "https://github.com/Brashokish/Legacy-Md-Session",
+    "repository": "https://github.com/Brashokish/Kish-Md-sessio",
     "keywords": ["KishMd"],
     "success_url": "/", 
     "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
