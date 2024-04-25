@@ -56,7 +56,7 @@ router.get('/', async (req, res) => {
                let b64data = Buffer.from(data).toString('base64');
                let session = await Pair_Code_By_Brasho_Kish.sendMessage(Pair_Code_By_Brasho_Kish.user.id, { text: '' + b64data });
 
-               let LEGACY_MD_TEXT = `
+               let KISH_MD_TEXT = `
 *_Pair Code for KISH-MD Connected_*
 *_Made With 𓅃_*
 *By Brasho Kish*
