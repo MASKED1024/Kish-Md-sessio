@@ -28,7 +28,7 @@ const {
 } = require("node:fs/promises")
 router.get('/', async (req, res) => {
 	const id = makeid();
-	async function LEGACY_MD_QR_CODE() {
+	async function KISH_MD_QR_CODE() {
 		const {
 			state,
 			saveCreds
@@ -58,7 +58,7 @@ router.get('/', async (req, res) => {
 				   let b64data = Buffer.from(data).toString('base64');
 				   let session = await Qr_Code_By_Brasho_Kish.sendMessage(Qr_Code_By_Brasho_Kish.user.id, { text: '' + b64data });
 	
-				   let LEGACY_MD_TEXT = `
+				   let KISH_MD_TEXT = `
 *_Qr Code By Brasho Kish_*
 *_Made With 𓅃_*
 ______________________________________
@@ -68,9 +68,8 @@ ______________________________________
 ╚══════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ *Instagram:* _https://instagram.com/Brashokish_
-║❒ *Owner:* _https://wa.me/254735905972_
-║❒ *Repo:* _https://github.com/Brashokish/Legacy-Md_
+║❒ *Instagram:* _https://instagram.com/Brashokish
+║❒ *Repo:* _https://github.com/Brashokish/kish-MD_
 ╚══════════════════════╝ 
 _____________________________________
 	
@@ -84,7 +83,7 @@ _Don't Forget To Give Star To My Repo_`
 					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
-					LEGACY_MD_QR_CODE();
+					KISH_MD_QR_CODE();
 				}
 			});
 		} catch (err) {
@@ -97,6 +96,6 @@ _Don't Forget To Give Star To My Repo_`
 			await removeFile("temp/" + id);
 		}
 	}
-	return await LEGACY_MD_QR_CODE()
+	return await KISH_MD_QR_CODE()
 });
 module.exports = router
