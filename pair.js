@@ -20,7 +20,7 @@ function removeFile(FilePath){
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-        async function LEGACY_MD_PAIR_CODE() {
+        async function KISH_MD_PAIR_CODE() {
         const {
             state,
             saveCreds
@@ -57,24 +57,23 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_Brasho_Kish.sendMessage(Pair_Code_By_Brasho_Kish.user.id, { text: '' + b64data });
 
                let LEGACY_MD_TEXT = `
-*_Pair Code for LEGACY-MD Connected_*
+*_Pair Code for KISH-MD Connected_*
 *_Made With 𓅃_*
 *By Brasho Kish*
 ______________________________________
 ╔════◇
-║ *『 THANKS FOR CHOOSING LEGACY-MD 』*
+║ *『 THANKS FOR CHOOSING KISH-MD 』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╰═════════════⊷
 ╔═════◇
 ║  『••• FOR HELP VISIT•••』
-║❒ *Instagram:* _https://instagram.com/Brashokish_
-║❒ *Owner:* _https://wa.me/254735905972_
-║❒ *Repo:* _https://github.com/Brashokish/Legacy-Md_
+║❒ *Instagram:* _https://instagram.com/Brashokish
+║❒ *Repo:* _https://github.com/Brashokish/Kish-MD_
 ╰═════════════⊷ 
 _____________________________________
 
 _Don't Forget To Give a Star To My Repo_`
- await Pair_Code_By_Brasho_Kish.sendMessage(Pair_Code_By_Brasho_Kish.user.id,{text:LEGACY_MD_TEXT},{quoted:session})
+ await Pair_Code_By_Brasho_Kish.sendMessage(Pair_Code_By_Brasho_Kish.user.id,{text:KISH_MD_TEXT},{quoted:session})
  
 
         await delay(100);
@@ -82,7 +81,7 @@ _Don't Forget To Give a Star To My Repo_`
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    LEGACY_MD_PAIR_CODE();
+                    KISH_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -93,6 +92,6 @@ _Don't Forget To Give a Star To My Repo_`
          }
         }
     }
-    return await LEGACY_MD_PAIR_CODE()
+    return await KISH_MD_PAIR_CODE()
 });
 module.exports = router
